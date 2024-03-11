@@ -2,6 +2,7 @@ h2{
   margin-left: 1rem;
   margin-top: 2rem;
   color: #BF5CAA  !important;
+  text-align: center;
 }
 h3{
   margin-left: 2rem;
@@ -26,11 +27,23 @@ body {
 .btn{
   background-color: #BF5CAA;
   margin-top: 2rem;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
+
+.btn:hover {
+  background-color: #b448ab;
+}
+
 a{
   color: white;
   text-decoration: none;
 }
+
+
 /* Header */
 
 .navbar-brand {
@@ -44,12 +57,13 @@ a{
 }
 /* Navbar styling */
 .navbar-expand-lg {
-  background-color: none !important;
+  background-color:#18122B !important;
 }
 
 .navbar {
-  background-color: none !important;
-  margin-top: 1rem;
+  background-color: #18122B !important;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 /* Link styling */
@@ -214,6 +228,8 @@ a{
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  flex: 1;
+  padding: 20px;
 }
 
 .text-container p {
@@ -229,5 +245,60 @@ a{
   
   .text-container, .image-container {
     text-align: center;
+  }
+}
+
+
+/* about page */
+
+
+#about{
+  margin-top: 4rem;
+}
+
+.homestarting {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 0px;
+}
+
+
+
+@media (max-width: 768px) {
+  .homestarting {
+    flex-direction: column;
+  }
+  
+  .text-container, .image-container {
+    text-align: center;
+  }
+
+  img {
+    height: auto;
+    width: 100%;
+    max-width: 500px;
+  }
+}
+
+button {
+  margin-top: 2rem;
+}
+
+
+.image-container {
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.profile-image {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .profile-image {
+    max-width: 500px;
   }
 }

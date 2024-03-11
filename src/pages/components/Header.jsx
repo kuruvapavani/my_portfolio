@@ -24,7 +24,7 @@ function Header(){
             <a className="navbar-brand" href="/">KURUVA PAVANI</a>
           </div>
           <button className="navbar-toggler" type="button" onClick={toggleNavbar}>
-            <FontAwesomeIcon icon={faBars} style={{ color: 'white', border: 'none' }} />
+            <FontAwesomeIcon icon={faBars} style={{ color: '#BF5CAA', border: 'none',marginBottom:"2rem" }} />
           </button>
           <div className={`collapse navbar-collapse justify-content-end ${isCollapsed ? '' : 'show'}`}>
           <ul className="navbar-nav">
