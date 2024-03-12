@@ -107,6 +107,7 @@ function Skills(){
           </ul>
         </div>
       </div>
+      <hr id="projects"></hr>
     </div>
   )
 }

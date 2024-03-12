@@ -14,6 +14,18 @@
       content="Web site created using create-react-app"
     />
     <title>Kuruva Pavani's Portfolio</title>
+    <!-- Add this in your HTML -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+    <script>
+      // Initialize Hammer.js for swipe functionality
+      var innerElement = document.querySelector('.inner');
+      var hammertime = new Hammer(innerElement);
+      hammertime.on('swipeleft swiperight', function(ev) {
+        // Disable swipeleft and swiperight gestures to avoid interference with vertical scrolling
+        ev.preventDefault();
+      });
+    </script>
+
   </head>
   <body>
     <div id="root"></div>

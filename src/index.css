@@ -39,7 +39,9 @@ hr{
 }
 
 .btn:hover {
-  background-color: #b448ab;
+  background-color: none !important;
+  color: #BF5CAA;
+  border:2px solid #BF5CAA !important;
 }
 
 a{
@@ -308,7 +310,7 @@ button {
 /* Skills component */
 
 #skills{
-  margin-bottom: 6rem;
+  margin-bottom: 13rem;
 }
 
 .skills-container {
@@ -372,3 +374,130 @@ button {
     width: calc(100% - 20px);
   }
 }
+
+/* projects */
+
+.projects{
+  margin-top: 10rem;
+  margin-bottom: 4rem;
+}
+
+
+.inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 30rem;
+}
+
+.wrapper {
+  position: absolute;
+  display: flex;
+}
+
+.section {
+  display: flex;
+  animation: swipe var(--speed) linear infinite backwards;
+}
+
+@keyframes swipe {
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translate(-100%);
+  }
+}
+
+.card {
+  width: auto;
+  height: 20rem;
+  position: relative;
+  perspective: 1000px;
+  border: none;
+  margin-right: 1rem;
+  background-color: #18122B;
+
+}
+
+.card-text{
+  color: #BF5CAA;
+}
+
+
+.card-inner {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+
+.card.flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.description {
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.card-front,
+.card-back {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.card-front {
+  z-index: 2;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.button-container button {
+  margin: 0 0.5rem;
+}
+
+.card {
+  width: 35rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .card {
+    width: 20rem;
+  }
+  .description{
+    font-size: 0.7rem;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .card {
+    width: 28rem;
+  }
+  .description{
+    font-size: 1rem;
+  }
+}
+
