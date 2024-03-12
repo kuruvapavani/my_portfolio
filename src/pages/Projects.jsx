@@ -1,8 +1,8 @@
-import diceGame from "./pages/images/diceGame.png";
-import drumKit from "./pages/images/drumKit.png";
-import keep from "./pages/images/Keep.png";
-import rps from "./pages/images/rockPaperScissors.png";
-import tdl from "./pages/images/toDoList.png";
+import diceGame from "./images/diceGame.png";
+import drumKit from "./images/drumKit.png";
+import keep from "./images/Keep.png";
+import rps from "./images/rockPaperScissors.png";
+import tdl from "./images/toDoList.png";
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";

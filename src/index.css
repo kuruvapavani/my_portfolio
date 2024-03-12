@@ -501,3 +501,59 @@ button {
   }
 }
 
+
+
+/* MyVerticalTimeLine */
+
+.heading {
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  margin-top: 50px; /* Adjust as needed */
+}
+
+button {
+  font-size: 1.5rem;
+  border-radius: 1rem;
+  margin: 0 10px; /* Add some spacing between buttons */
+  color: #BF5CAA ;
+  border-color: #BF5CAA;
+  background-color: #18122B;
+}
+button:active{
+  color: #C9B6E4;
+}
+.mySkills{
+  text-wrap: wrap !important;
+}
+.vertical-timeline-element-subtitle{
+  color: #BF5CAA;
+}
+
+#experience{
+  margin-top: 10rem;
+}
+
+.vertical-timeline::before {
+  background: #18122B !important;
+}
+.vertical-timeline-element-icon {
+  color: #18122B;
+}
+
+.vertical-timeline-element-icon {
+  -webkit-box-shadow: 0 0 0 4px #BF5CAA,inset 0 2px 0 rgba(0,0,0,.08),0 3px 0 4px rgba(0,0,0,.05) !important;
+  box-shadow: 0 0 0 4px #BF5CAA,inset 0 2px 0 rgba(0,0,0,.08),0 3px 0 4px rgba(0,0,0,.05) !important;
+}
+
+
+.vertical-timeline-element-content {
+  position: relative;
+  margin-left: 60px;
+  background: #18122B !important;
+  color: white;
+  border-radius: 0.25em;
+  padding: 1em;
+  -webkit-box-shadow: 0 3px 0 #BF5CAA !important;
+  box-shadow: 0 3px 0 #BF5CAA !important;
+}

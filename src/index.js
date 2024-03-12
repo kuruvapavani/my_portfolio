@@ -5,7 +5,8 @@ import "./index.css"
 import Home from './pages/Home';
 import About from './pages/About';
 import Skills from './pages/Skills';
-import Projects from './Projects';
+import Projects from './pages/Projects';
+import MyVerticalTimeline from './pages/TimeLine';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <div>
@@ -14,5 +15,6 @@ root.render(
     <About />
     <Skills />
     <Projects />
+    <MyVerticalTimeline />
   </div>
 );
