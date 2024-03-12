@@ -38,6 +38,7 @@ function Header(){
           </div>
         </div>
       </nav>
+    <hr id='home'></hr>
     </div>
   )
 }

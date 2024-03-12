@@ -4,11 +4,13 @@ import Header from './pages/components/Header';
 import "./index.css"
 import Home from './pages/Home';
 import About from './pages/About';
+import Skills from './pages/Skills';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <div>
     <Header />
     <Home />
     <About />
+    <Skills />
   </div>
 );

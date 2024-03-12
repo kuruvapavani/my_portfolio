@@ -16,7 +16,7 @@ function Home() {
   }, []);
 
   return (
-    <div className='homestarting' id='home'>
+    <div className='homestarting'>
       <div className='grid-container'>
         <div className='image-container' ref={imageRef}>
           <img src={profile} alt='profile'/>
