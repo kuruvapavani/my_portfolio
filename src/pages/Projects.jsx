@@ -47,7 +47,7 @@ const Banner = ({ images, speed = 1000 }) => {
                   <div className="card-body">
                     <div className="button-container">
                       <button className="btn card-link">Details</button>
-                      <button className="btn card-link">View</button>
+                      <a href={url} target="_blank" rel="noreferrer"><button className="btn card-link">View</button></a>
                     </div>
                   </div>
 
@@ -75,7 +75,7 @@ const Banner = ({ images, speed = 1000 }) => {
                   <div className="card-body">
                     <div className="button-container">
                       <button className="btn card-link">Details</button>
-                      <button className="btn card-link">View</button>
+                      <a href={url} target="_blank" rel="noreferrer"><button className="btn card-link">View</button></a>
                     </div>
                   </div>
 
@@ -103,7 +103,7 @@ const Banner = ({ images, speed = 1000 }) => {
                   <div className="card-body">
                     <div className="button-container">
                       <button className="btn card-link">Details</button>
-                      <button className="btn card-link">View</button>
+                      <a href={url} target="_blank" rel="noreferrer"><button className="btn card-link">View</button></a>
                     </div>
                   </div>
 

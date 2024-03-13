@@ -31,7 +31,7 @@ function MyVerticalTimeline() {
       </VerticalTimelineElement>
       <VerticalTimelineElement
         className="vertical-timeline-element--education"
-        date="2018-2020"
+        date="2019-2020"
         icon={<FontAwesomeIcon icon={faGraduationCap} style={{ color: "#BF5CAA", border: 'none' }} />}
       >
         <h3 className="vertical-timeline-element-title">Matric</h3>
