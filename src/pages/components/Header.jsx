@@ -21,7 +21,7 @@ function Header(){
       <nav className={`navbar navbar-expand-lg fixed-top ${isCollapsed ? '' : 'show'}`}>
         <div className="container">
           <div className="d-flex align-items-center">
-            <a className="navbar-brand" href="/">KURUVA PAVANI</a>
+            <a className="navbar-brand" href="/my_portfolio">KURUVA PAVANI</a>
           </div>
           <button className="navbar-toggler" type="button" onClick={toggleNavbar}>
             <FontAwesomeIcon icon={faBars} style={{ color: '#BF5CAA', border: 'none' }} />

@@ -8,7 +8,7 @@ import Skills from './pages/Skills';
 import Projects from './pages/Projects';
 import MyVerticalTimeline from './pages/TimeLine';
 import Contact from './pages/Contact';
-import Footer from './pages/Footer';
+import Footer from './pages/components/Footer';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <div>
