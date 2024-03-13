@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/my_portfolio/static/css/main.917a5f3c.css",
+    "main.js": "/my_portfolio/static/js/main.044f1cdf.js",
+    "static/media/drumKit.png": "/my_portfolio/static/media/drumKit.cd922a312e4fab846ecd.png",
+    "static/media/rockPaperScissors.png": "/my_portfolio/static/media/rockPaperScissors.5c2bde9c3ec5b02045e3.png",
+    "static/media/resume.pdf": "/my_portfolio/static/media/resume.feb9f6cdc9af79048d46.pdf",
+    "static/media/diceGame.png": "/my_portfolio/static/media/diceGame.c5f7ba4b7113c2e4d6f4.png",
+    "static/media/profile1.png": "/my_portfolio/static/media/profile1.72845cab9779433f03db.png",
+    "static/media/Keep.png": "/my_portfolio/static/media/Keep.a735b3c60c5001716d23.png",
+    "static/media/profile2.png": "/my_portfolio/static/media/profile2.1d7195dce407036d6c02.png",
+    "static/media/toDoList.png": "/my_portfolio/static/media/toDoList.b27d7a00b903730de97c.png",
+    "index.html": "/my_portfolio/index.html",
+    "main.917a5f3c.css.map": "/my_portfolio/static/css/main.917a5f3c.css.map",
+    "main.044f1cdf.js.map": "/my_portfolio/static/js/main.044f1cdf.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.917a5f3c.css",
+    "static/js/main.044f1cdf.js"
+  ]
+}
