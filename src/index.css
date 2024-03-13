@@ -25,6 +25,7 @@ body {
 }
 
 hr{
+  margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
@@ -426,6 +427,10 @@ button {
 }
 
 
+
+
+
+
 .card-inner {
   width: 100%;
   height: auto;
@@ -442,6 +447,7 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: #BF5CAA;
 }
 
 .description {
@@ -556,4 +562,102 @@ button:active{
   padding: 1em;
   -webkit-box-shadow: 0 3px 0 #BF5CAA !important;
   box-shadow: 0 3px 0 #BF5CAA !important;
+}
+
+/* contact me */
+#contact{
+  margin-top: 10rem !important;
+}
+
+
+.card {
+  flex: 1; 
+  max-width: calc(100% - 40px);
+}
+
+.contactLink{
+  color: #BF5CAA !important;
+}
+.mb-2{
+  color: #BF5CAA;
+}
+.mb-2.text-muted.card-subtitle.h6{
+  color: #BF5CAA !important;
+}
+.mb-2.text-muted.card-text{
+  color: #BF5CAA !important;
+}
+.card-subtitle{
+  color: #BF5CAA !important;
+}
+
+.contact-card{
+  border: 2px solid #BF5CAA !important;
+  margin-top: 1rem;
+
+}
+
+.card-text {
+  word-wrap: break-word;
+  text-align: center;
+}
+
+
+.form-label{
+  color: #BF5CAA;
+}
+
+/* CSS for mobile */
+@media (max-width: 768px) {
+  .big-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+  }
+
+  .cards-container {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+}
+
+/* CSS for laptop */
+@media (min-width: 768px) {
+  .big-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+  }
+
+  .cards-container {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-form {
+    width: 60%;
+    margin-top: 2rem;
+  }
+}
+
+.custom-input {
+  border: 1px solid #BF5CAA;
+  border-radius: 0.25rem;
+  padding: 0.375rem 0.75rem;
+  background-color: #18122B;
+  color: #BF5CAA;
+}
+
+.custom-input:focus {
+  border-color: #BF5CAA;
+  background-color: #18122B;
+  color: #BF5CAA;
+  box-shadow: 0 0 0 0.2rem rgba(191, 92, 170, 0.4);
+
 }

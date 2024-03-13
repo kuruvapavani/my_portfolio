@@ -7,6 +7,7 @@ import About from './pages/About';
 import Skills from './pages/Skills';
 import Projects from './pages/Projects';
 import MyVerticalTimeline from './pages/TimeLine';
+import Contact from './pages/Contact';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <div>
@@ -16,5 +17,6 @@ root.render(
     <Skills />
     <Projects />
     <MyVerticalTimeline />
+    <Contact />
   </div>
 );

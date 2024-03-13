@@ -94,6 +94,7 @@ function MyVerticalTimeline() {
       <VerticalTimeline>
         {num === '0' ? educationTimeline : experienceTimeline}
       </VerticalTimeline>
+      <hr id='contact'></hr>
     </div>
   );
 }
