@@ -710,3 +710,79 @@ button:active{
   font-weight: 600;
   font-size: large;
 }
+
+
+/* profile pic animation */
+
+.image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30rem;
+  height: 30rem;
+  margin: auto;
+  margin-top: 4rem;
+  background-color: #BF5CAA;
+  background-image: linear-gradient(19deg, #18122B 0%, #18122B 100%);
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  box-shadow: 15px 15px 50px rgba(0, 0, 0, 0.2);
+  animation: morphing 10s infinite;
+  overflow: hidden;
+}
+
+.profile-image {
+  max-width:100%;
+  max-height: 100%;
+}
+
+.image-container:hover {
+  animation-play-state: paused;
+}
+
+@keyframes morphing {
+  0% {
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    box-shadow: 15px 15px 50px rgba(0, 0, 0, 0.2);
+  }
+  25% {
+    border-radius: 58% 42% 75% 25% / 76% 46% 54% 24%;
+    box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.2);
+  }
+  50% {
+    border-radius: 50% 50% 33% 67% / 55% 27% 73% 45%;
+    box-shadow: -5px -5px 50px rgba(0, 0, 0, 0.2);
+  }
+  75% {
+    border-radius: 33% 67% 58% 42% / 63% 68% 32% 37%;
+    box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    box-shadow: 15px 15px 50px rgba(0, 0, 0, 0.2);
+  }
+}
+
+
+@media (max-width: 768px) {
+  .image-container {
+    width: 100%;
+    height: auto;
+  }
+
+  .socialIcons {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .social-link {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .text-container {
+    padding: 20px;
+  }
+}
+
+
+/*  */

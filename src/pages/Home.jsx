@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react';
-import profile from "./images/profile1.png";
+import profile from "./images/profilepic2.jpg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faGithub, faLinkedin} from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope} from '@fortawesome/free-solid-svg-icons';
@@ -19,7 +19,7 @@ function Home() {
     <div className='homestarting'>
       <div className='grid-container'>
         <div className='image-container' ref={imageRef}>
-          <img src={profile} alt='profile'/>
+          <img src={profile} alt='profile' className="profile-image" />
         </div>
         <div className='socialIcons'>
           <a href="mailto:pavanikuruva2109@gmail.com" className='social-link' target='_blank' rel="noreferrer"><FontAwesomeIcon icon={faEnvelope} style={{ fontSize: `${imageWidth * 0.07}px` ,color :"#BF5CAA "}} /></a>

@@ -1,9 +1,16 @@
-import React from 'react';
-import profile from "./images/profile2.png";
+import React, { useEffect, useState, useRef } from 'react';
+import profile from "./images/profilepic.jpg";
 import resume from "./images/resume.pdf"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
 function About(){
+  const [imageWidth, setImageWidth] = useState(0);
+  const imageRef = useRef(null);
+  useEffect(() => {
+    if (imageRef.current) {
+      setImageWidth(imageRef.current.offsetWidth);
+    }
+  }, []);
   return(
     <div>
       <hr id='about'></hr>
@@ -16,9 +23,9 @@ function About(){
         </a>
       </div>
 
-      <div className='image-container'>
-        <img src={profile} alt='profile' className="profile-image" />
-      </div>
+      <div className='image-container' ref={imageRef}>
+          <img src={profile} alt='profile' className="profile-image" />
+        </div>
       </div>
       <hr id='skills'></hr>
     </div>
