@@ -1,11 +1,12 @@
+import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import diceGame from "./images/diceGame.png";
 import drumKit from "./images/drumKit.png";
 import keep from "./images/Keep.png";
 import rps from "./images/rockPaperScissors.png";
 import tdl from "./images/toDoList.png";
-import React, { useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+
 const images = [
   { id: 1,
     image: diceGame,
@@ -32,91 +33,108 @@ const images = [
 const Banner = ({ images, speed = 1000 }) => {
   const [flippedCard, setFlippedCard] = useState(null);
 
-  const flipCard = (id) => {
+  const flipCard = (id, event) => {
     setFlippedCard(flippedCard === id ? null : id);
   };
+
   return (
     <div className="inner">
       <div className="wrapper">
-        <section style={{ "--speed": `${speed}ms` }} className="section">
-          {images.map(({ id, image,url,description}) => (
-            <div className={`card ${flippedCard === id ? 'flipped' : ''}`} onClick={() => flipCard(id)}>
-            <div className="card-inner">
+        <section className={flippedCard ? 'paused section' : 'section'} style={{ "--speed": `${speed}ms` }}>
+          {images.map(({ id, image, url, description }) => (
+            <div
+              className={`card ${flippedCard === id ? 'flipped' : ''}`}
+              onClick={(event) => flipCard(id, event)}
+              key={`card-${id}`}
+              id={`card-${id}`}
+            >
+              <div className="card-inner">
                 <div className="card-front">
                   <img className="card-img-top" src={image} alt={id} />
                   <div className="card-body">
                     <div className="button-container">
                       <button className="btn card-link">Details</button>
-                      <a href={url} target="_blank" rel="noreferrer"><button className="btn card-link">View</button></a>
+                      <a href={url} target='_blank' rel='noreferrer'><button className='btn card-link' >View</button></a>
                     </div>
                   </div>
-
                 </div>
                 <div className="card-back">
-                <div className="card-body">
-                  <div className="description">
-                    <p className="card-text">{description}</p>
+                  <div className="card-body">
+                    <div className="description">
+                      <p className="card-text">{description}</p>
+                    </div>
+                    <div className="button-container">
+                      <button className="btn card-link"><FontAwesomeIcon icon={faArrowLeft} />Go Back</button>
+                      <a href={url} target='_blank' rel='noreferrer'><button className='btn card-link' >View</button></a>
+                    </div>
                   </div>
-                  <div className="button-container">
-                    <button className="btn card-link"><FontAwesomeIcon icon={faArrowLeft} />Go Back</button>
-                  </div>
-                </div>
                 </div>
               </div>
             </div>
           ))}
         </section>
-        <section style={{ "--speed": `${speed}ms` }} className="section">
-          {images.map(({ id, image,url,description}) => (
-            <div className={`card ${flippedCard === id ? 'flipped' : ''}`} onClick={() => flipCard(id)}>
-            <div className="card-inner">
+        <section className={flippedCard ? 'paused section' : 'section'} style={{ "--speed": `${speed}ms` }}>
+          {images.map(({ id, image, url, description }) => (
+            <div
+              className={`card ${flippedCard === id ? 'flipped' : ''}`}
+              onClick={(event) => flipCard(id, event)}
+              key={`card-${id}`}
+              id={`card-${id}`}
+            >
+              <div className="card-inner">
                 <div className="card-front">
                   <img className="card-img-top" src={image} alt={id} />
                   <div className="card-body">
                     <div className="button-container">
                       <button className="btn card-link">Details</button>
-                      <a href={url} target="_blank" rel="noreferrer"><button className="btn card-link">View</button></a>
+                      <a href={url} target='_blank' rel='noreferrer'><button className='btn card-link' >View</button></a>
                     </div>
                   </div>
-
                 </div>
                 <div className="card-back">
-                <div className="card-body">
-                  <div className="description">
-                    <p className="card-text">{description}</p>
+                  <div className="card-body">
+                    <div className="description">
+                      <p className="card-text">{description}</p>
+                    </div>
+                    <div className="button-container">
+                      <button className="btn card-link"><FontAwesomeIcon icon={faArrowLeft} />Go Back</button>
+                      <a href={url} target='_blank' rel='noreferrer'><button className='btn card-link' >View</button></a>
+
+                    </div>
                   </div>
-                  <div className="button-container">
-                    <button className="btn card-link"><FontAwesomeIcon icon={faArrowLeft} />Go Back</button>
-                  </div>
-                </div>
                 </div>
               </div>
             </div>
           ))}
         </section>
-        <section style={{ "--speed": `${speed}ms` }} className="section">
-          {images.map(({ id, image,url,description}) => (
-            <div className={`card ${flippedCard === id ? 'flipped' : ''}`} onClick={() => flipCard(id)}>
-            <div className="card-inner">
+        <section className={flippedCard ? 'paused section' : 'section'} style={{ "--speed": `${speed}ms` }}>
+          {images.map(({ id, image, url, description }) => (
+            <div
+              className={`card ${flippedCard === id ? 'flipped' : ''}`}
+              onClick={(event) => flipCard(id, event)}
+              key={`card-${id}`}
+              id={`card-${id}`}
+            >
+              <div className="card-inner">
                 <div className="card-front">
                   <img className="card-img-top" src={image} alt={id} />
                   <div className="card-body">
                     <div className="button-container">
                       <button className="btn card-link">Details</button>
-                      <a href={url} target="_blank" rel="noreferrer"><button className="btn card-link">View</button></a>
+                      <a href={url} target='_blank' rel='noreferrer'><button className='btn card-link' >View</button></a>
                     </div>
                   </div>
-
                 </div>
                 <div className="card-back">
-                <div className="card-body">
-                  <div className="description">
-                    <p className="card-text">{description}</p>
+                  <div className="card-body">
+                    <div className="description">
+                      <p className="card-text">{description}</p>
+                    </div>
+                    <div className="button-container">
+                      <button className="btn card-link"><FontAwesomeIcon icon={faArrowLeft} />Go Back</button>
+                      <a href={url} target='_blank' rel='noreferrer'><button className='btn card-link' >View</button></a>
+                    </div>
                   </div>
-                  <div className="button-container">
-                    <button className="btn card-link"><FontAwesomeIcon icon={faArrowLeft} />Go Back</button>
-                  </div>
-                </div>
                 </div>
               </div>
             </div>
@@ -127,13 +145,14 @@ const Banner = ({ images, speed = 1000 }) => {
   );
 };
 
+
 const Projects = () => {
   return( 
-  <div>
-  <h2 className="projects">Projects</h2>
-  <Banner images={images} speed={20000} />
-  <hr id=""></hr>
-  </div>
+    <div>
+      <h2 className="projects">Projects</h2>
+      <Banner images={images} speed={20000} />
+      <hr id=""></hr>
+    </div>
   );
 };
 

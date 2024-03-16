@@ -401,6 +401,15 @@ button {
   animation: swipe var(--speed) linear infinite backwards;
 }
 
+.paused {
+  display: flex;
+  animation-play-state: paused;
+  animation-delay: calc(var(--speed) * (1 - var(--flipped-index) / var(--card-count)));
+}
+
+
+
+
 @keyframes swipe {
   0% {
     transform: translate(0);
