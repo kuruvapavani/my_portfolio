@@ -6,7 +6,7 @@ import drumKit from "./images/drumKit.png";
 import keep from "./images/Keep.png";
 import rps from "./images/rockPaperScissors.png";
 import tdl from "./images/toDoList.png";
-
+import mbs from "./images/blogsite.png"
 const images = [
   { id: 1,
     image: diceGame,
@@ -27,7 +27,13 @@ const images = [
   { id: 5,
     image: tdl,
     url:"https://kuruvapavani-to-do-list.onrender.com",
-    description:"This project is a to-do list application that helps users organize tasks and goals. It allows the creation of multiple lists with distinct names and items. By appending /<listname> to the URL, users can create new lists. However, currently, this functionality is the same for all users, and I plan to enhance it by creating separate lists for individual users through user accounts.Skills- Html,Css,Nodejs,Expressjs,MongoDb"}
+    description:"This project is a to-do list application that helps users organize tasks and goals. It allows the creation of multiple lists with distinct names and items. By appending /<listname> to the URL, users can create new lists. However, currently, this functionality is the same for all users, and I plan to enhance it by creating separate lists for individual users through user accounts.Skills- Html,Css,Nodejs,Expressjs,MongoDb"},
+    {
+      id:6,
+      image:mbs,
+      url:"https://kuruvapavani-mern-blog.netlify.app/",
+      description:"This project is a dynamic and interactive blog site. It provides users with a seamless experience, allowing them to log in, personalize their profiles, and create, edit, and publish posts effortlessly. With a user-friendly interface and responsive design, readers can explore a variety of content from diverse authors. Additionally, I have created dummy authors and posts filled with Lorem Ipsum text to enhance the platform's content. Skills: MongoDB, Node.js, React, User Authentication, Responsive Design, Bootstrap, Html & Css."
+    }
 ];
 
 const Banner = ({ images, speed = 1000 }) => {
